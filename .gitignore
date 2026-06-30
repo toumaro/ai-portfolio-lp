@@ -1,0 +1,12 @@
+# 公開しない個人メモ・設計図
+profile.md
+lp-plan.md
+
+# 退避・バックアップ
+_archive/
+
+# macOS
+.DS_Store
+
+# Claude Code 作業用
+.claude/
