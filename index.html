@@ -115,7 +115,7 @@
   <header id="top" class="relative min-h-screen flex flex-col justify-center px-6 pt-14">
     <div class="mx-auto w-full max-w-5xl grid items-center gap-10 md:gap-14 md:grid-cols-[1fr_auto]">
      <div class="order-last md:order-first">
-      <p class="reveal font-mono text-xs sm:text-sm text-cyan2 tracking-[0.25em] mb-6" style="animation-delay:.05s">AI&nbsp;PORTFOLIO&nbsp;/&nbsp;SELF-EVAL</p>
+      <p class="reveal font-mono text-xs sm:text-sm text-cyan2 tracking-[0.25em] mb-6" style="animation-delay:.05s">AI&nbsp;PORTFOLIO</p>
 
       <h1 class="reveal font-display font-black tracking-tight text-6xl sm:text-7xl md:text-8xl leading-[0.95] mb-6" style="animation-delay:.12s">
         <span class="accent-text">とうまろ</span>
@@ -154,15 +154,26 @@
       </a>
      </div>
 
-      <!-- ヒーローのアバター（円形フレーム＋グロー） -->
-      <div class="reveal order-first md:order-last justify-self-center" style="animation-delay:.18s">
-        <div class="relative">
-          <div class="pointer-events-none absolute -inset-6 rounded-full bg-[radial-gradient(circle,rgba(52,224,242,0.28),rgba(139,124,246,0.18)_45%,transparent_72%)] blur-2xl"></div>
-          <div class="relative h-56 w-56 sm:h-72 sm:w-72 md:h-80 md:w-80 overflow-hidden rounded-full border border-cyan2/40 bg-gradient-to-br from-fg to-[#cbd5ec] shadow-2xl shadow-cyan2/20">
-            <img src="assets/my-notion-face-transparent.png" alt="とうまろのイラスト" class="h-full w-full object-contain p-3" />
-          </div>
-        </div>
-      </div>
+     <!-- ポートレート -->
+     <div class="reveal order-first md:order-last flex justify-center md:justify-end" style="animation-delay:.18s">
+       <div class="relative">
+         <!-- 背後のグロー -->
+         <div class="pointer-events-none absolute -inset-6 -z-10 rounded-full bg-[radial-gradient(circle_at_50%_40%,rgba(52,224,242,0.22),transparent_65%),radial-gradient(circle_at_70%_75%,rgba(139,124,246,0.22),transparent_65%)] blur-xl"></div>
+         <!-- グラデーションリング -->
+         <div class="rounded-full bg-gradient-to-br from-cyan2 to-violet2 p-[3px] shadow-2xl shadow-cyan2/20">
+           <div class="rounded-full bg-fg p-2 sm:p-3">
+             <img src="assets/my-notion-face-portrait.png"
+                  alt="とうまろのポートレート"
+                  class="h-52 w-52 sm:h-64 sm:w-64 md:h-72 md:w-72 rounded-full object-cover" />
+           </div>
+         </div>
+         <!-- ステータスバッジ -->
+         <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 rounded-full border border-line bg-panel/90 backdrop-blur-sm px-4 py-1.5 shadow-lg">
+           <span class="h-2 w-2 rounded-full bg-[#28c840]"></span>
+           <span class="font-mono text-xs text-fg">発信中</span>
+         </div>
+       </div>
+     </div>
     </div>
   </header>
 
